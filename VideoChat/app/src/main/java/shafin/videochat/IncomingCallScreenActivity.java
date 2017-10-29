@@ -10,6 +10,7 @@ import com.sinch.android.rtc.calling.Call;
 import com.sinch.android.rtc.calling.CallEndCause;
 import com.sinch.android.rtc.video.VideoCallListener;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,6 +31,8 @@ public class IncomingCallScreenActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.incmoing);
+android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         Button answer = (Button) findViewById(R.id.answerButton);
         answer.setOnClickListener(mClickListener);

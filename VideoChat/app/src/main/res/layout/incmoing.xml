@@ -37,9 +37,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:background="@android:color/darker_gray"
+        android:background="@drawable/ring"
         android:contentDescription="Call background"
-        android:padding="0dip">
+        android:padding="0dip"
+        >
 
     </ImageView>
 
@@ -49,7 +50,7 @@
         android:layout_height="0dp"
         android:layout_gravity="center"
         android:layout_weight="1"
-        android:background="@color/colorPrimaryDark"
+        android:background="#14a1b4"
         android:gravity="center">
 
         <Button
@@ -57,7 +58,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Answer"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"/>
 
         <Button
             android:id="@+id/declineButton"
@@ -65,7 +69,11 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/answerButton"
             android:text="Cancel"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"
+            />
 
     </RelativeLayout>
 

@@ -25,7 +25,8 @@ public class PlaceActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
         //initializing UI elements
         mCallName = (EditText) findViewById(R.id.callName);
         mCallButton = (Button) findViewById(R.id.callButton);
