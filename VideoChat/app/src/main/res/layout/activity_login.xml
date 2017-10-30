@@ -50,6 +50,8 @@
         android:minHeight="56dp"
         android:minWidth="132dp"
         android:text="Login"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        android:background="#14a1b4"
+        android:textColor="@android:color/white"/>
 
 </RelativeLayout>
